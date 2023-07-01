@@ -8,4 +8,7 @@
   <p>Status: Not completed</p>
 <% end %>
 
-<a href="/tasks">Back to list</a>
+<%= link_to 'Back to List', tasks_path(@task) %>
+<br>
+<br>
+<%= link_to 'Edit', edit_task_path(@task)%>

@@ -1,0 +1,9 @@
+<%= form_with(model: task, local: true) do |form| %>
+  <p><strong>Title</strong></p>
+  <%= form.text_field :title  %>
+
+  <p><strong>Details</strong></p>
+  <%= form.text_field :details %>
+
+  <%= form.submit "Update Task" %>
+<% end %>
