@@ -1,0 +1,20 @@
+<h1>New Task</h1>
+
+<!-- and another one is there to handle the POST request
+generated when submitting this form. Try to use directly the 
+form_with helper in your view. -->
+<%= form_with(model: Task.new, local: true) do |form| %>
+  <p><strong>Title</strong></p>
+  <%= form.text_field :title  %>
+
+  <p><strong>Details</strong></p>
+  <%= form.text_field :details %>
+
+  <%= form.submit "Create Task" %>
+<% end %>
+
+<!--
+pe
+<%=  %>
+er
+<%  %>
